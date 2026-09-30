@@ -213,3 +213,9 @@ p, h1, h2, h3 { margin: 0; }
 @media (max-width: 599.98px) {
   .fields { grid-template-columns: minmax(0, 1fr); }
 }
+@media (max-width: 374.98px) {
+  .logo-main { font-size: 13px; white-space: nowrap; }
+  .logo-main small { font-size: 11px; }
+  .uc-grid { grid-template-columns: minmax(0, 1fr); }
+  .pkg-grid { grid-template-columns: minmax(0, 1fr); }
+}
