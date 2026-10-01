@@ -133,6 +133,7 @@ p, h1, h2, h3 { margin: 0; }
 .flow-body { padding-bottom: 28px; }
 .flow-title { font-size: 18px; margin: 0 0 6px; line-height: 1.5; color: #1E2A4A; font-weight: 700; }
 .flow-text { font-size: 15.5px; line-height: 1.9; color: #4A5468; margin: 0; }
+.flow-ph { display: inline-block; }
 
 /* ===== 7. faq ===== */
 .container-faq { max-width: 800px; }
@@ -225,4 +226,5 @@ p, h1, h2, h3 { margin: 0; }
   .uc-grid { grid-template-columns: minmax(0, 1fr); }
   .pkg-grid { grid-template-columns: minmax(0, 1fr); }
   .flow-inner { grid-template-columns: minmax(0, 1fr); }
+  .hero-badge-pill { white-space: nowrap; }
 }
