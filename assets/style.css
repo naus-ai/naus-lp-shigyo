@@ -196,6 +196,11 @@ p, h1, h2, h3 { margin: 0; }
 .fixed-cta-inner { max-width: 640px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .fixed-cta a { display: flex; font-size: 15px; height: 52px; }
 .fixed-cta .btn-grad { box-shadow: 0 8px 24px rgba(232,100,40,0.30); }
+.fixed-cta { transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), visibility 0s linear 0s; }
+.fixed-cta.is-hidden { transform: translateY(100%); visibility: hidden; transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), visibility 0s linear 0.3s; }
+@media (prefers-reduced-motion: reduce) {
+  .fixed-cta, .fixed-cta.is-hidden { transition: none; }
+}
 
 /* ===== responsive ===== */
 @media (max-width: 759.98px) {

@@ -35,4 +35,14 @@
       setTab(el.getAttribute('data-tab'));
     });
   });
+
+  var fixedCta = document.querySelector('.fixed-cta');
+  var heroBtns = document.querySelector('.hero-btns');
+
+  if (fixedCta && heroBtns && 'IntersectionObserver' in window) {
+    fixedCta.classList.add('is-hidden');
+    new IntersectionObserver(function (entries) {
+      fixedCta.classList.toggle('is-hidden', entries[entries.length - 1].isIntersecting);
+    }).observe(heroBtns);
+  }
 })();
